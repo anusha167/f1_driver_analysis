@@ -59,7 +59,7 @@ app.layout= html.Div(className='page', children=[
     html.Header(className='header', children=[
         html.Div(className='header-inner', children=[
             html.Div(className='logo', children=[
-                html.Span('F1', className='logo-f1'),
+                html.Img(src='/assets/logo_f1.png', className='logo-img'),
                 html.Span('Grid Analytics', className='logo-sub'),
             ]),
             html.P(
