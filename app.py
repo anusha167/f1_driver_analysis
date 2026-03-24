@@ -28,6 +28,7 @@ df['grid_delta'] = df['grid'] - df['position']
 
 # Intializing App
 app = Dash(__name__, title='F1 Grid Analysis')
+server = app.server
 
 # Colour Palette
 C = {
@@ -254,6 +255,7 @@ def driver_deep_dive(driver_id, year_range):
             html.H3(str(wins), className='stat-value'),
         ]),
         html.Div(className='stat-card mini', children=[
+            
             html.P('Poles',     className='stat-label'),
             html.H3(str(poles), className='stat-value'),
         ]),
