@@ -192,7 +192,7 @@ def global_scatter(_):
         x=sample['grid'], 
         y=sample['position'],
         mode='markers',
-        marker=dict(color=C['accent'], size=4, opacity=0.25),
+        marker=dict(color=C['accent2'], size=4, opacity=0.25),
         hovertemplate='Grid: %{x}<br>Finish: %{y}',
         name='Race entry'
         ))
@@ -200,7 +200,7 @@ def global_scatter(_):
         x=x_line,
         y=m*x_line + b,
         mode='lines',
-        line=dict(color=C['accent2'], width=2),
+        line=dict(color=C['accent'], width=2),
         name=f'Trend (r={corr:.3f})'
     ))
     fig.update_layout(
